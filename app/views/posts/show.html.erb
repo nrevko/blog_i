@@ -1,6 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @post %>
+<%= "Created by #{@post.user.name} #{time_ago_in_words(@post.created_at)} ago" %>
 
 <div>
   <%= link_to "Edit this post", edit_post_path(@post) %> |
